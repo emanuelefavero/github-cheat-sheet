@@ -70,6 +70,14 @@ Git and GiHub Cheat Sheet.
 
 - `git reset --hard COMMIT_HASH`
 
+## HARD Reset to a commit, delete all local changes (WARNING: this will delete all commits after the commit you are resetting to) and force push to remote (WARNING: this will delete all commits after the commit you are resetting to on the remote)
+
+BEWARE: _Don’t use this method if the github repo is being used by multiple users_
+
+- `git reset --hard COMMIT_HASH`
+- `git clean -f`
+- `git push -f origin main`
+
 ## Show
 
 File changes in directory:
