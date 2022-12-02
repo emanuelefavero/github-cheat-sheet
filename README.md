@@ -12,6 +12,24 @@ Git and GiHub Cheat Sheet.
    `git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git`
 6. `git push -u origin main`
 
+## Create a new repository FROM THE COMMAND LINE
+
+1. `git init`
+2. `git add .`
+3. `git commit -m "first commit"`
+4. `gh repo create REPO-NAME --public -d 'description'`
+5. `git remote add origin https://github.com/emanuelefavero/REPO-NAME.git`
+6. `git branch -M main`
+7. `git push -u origin main`
+
+## Open repo on github browser
+
+- `gh browse`
+
+## List all repositories
+
+- `gh repo list -L 200`
+
 ## Tips
 
 - Create a README.md file in the root of the repository
@@ -31,6 +49,8 @@ Git and GiHub Cheat Sheet.
 ## Clone a repository
 
 - `git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git`
+  OR
+- `gh repo clone YOUR_USERNAME/YOUR_REPOSITORY_NAME`
 
 ## Pull remote changes from GitHub to local
 
@@ -53,6 +73,8 @@ Git and GiHub Cheat Sheet.
 ## Delete a branch
 
 - `git branch -d BRANCH_NAME`
+  OR
+- `git branch --delete BRANCH_NAME`
 
 ## Merge a branch
 
@@ -149,3 +171,20 @@ After resolving conflicts, merge with:
 
 - `git add FILENAME`
 - `git rebase --continue`
+
+## Display description and README.md of a repository
+
+- `gh repo view`
+- `gh repo view https://github.com/emanuelefavero/REPO-NAME.git`
+
+## Get how many commits a day in a repo
+
+- `git log --date=short --pretty=format:%ad | sort | uniq -c`
+
+## Get how many commits a month in a repo
+
+- `git log --date=short --pretty=format:%am | sort | uniq -c`
+
+## Get how many commits a year in a repo
+
+- `git log --date=short --pretty=format:%ay | sort | uniq -c`
