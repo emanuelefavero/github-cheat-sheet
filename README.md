@@ -19,8 +19,13 @@ Git and GiHub Cheat Sheet.
 3. `git commit -m "first commit"`
 4. `gh repo create REPO-NAME --public -d 'description'`
 5. `git remote add origin https://github.com/emanuelefavero/REPO-NAME.git`
-6. `git branch -M main`
-7. `git push -u origin main`
+6. `git push -u origin main`
+
+## Subsequent adds, commits, pushes
+
+1. `git add .`
+2. `git commit -m "commit message"`
+3. `git push`
 
 ## Open repo on github browser
 
