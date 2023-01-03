@@ -1,6 +1,10 @@
 # GitHub Cheat Sheet
 
-Git and GiHub Cheat Sheet.
+Git and GiHub cheat sheet
+
+### Common git problems cheat sheet
+
+- [dangitgit.com](https://dangitgit.com/en)
 
 ## Create a new repository
 
