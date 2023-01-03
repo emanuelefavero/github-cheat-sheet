@@ -197,3 +197,24 @@ After resolving conflicts, merge with:
 ## Get how many commits a year in a repo
 
 - `git log --date=short --pretty=format:%ay | sort | uniq -c`
+
+## Contribute to an Open Source project
+
+- `upstream` is the name of the remote repository you forked from
+- `origin` is the name of the remote repository you cloned from
+- `local` is the name of the local repository
+
+1. Fork the repository
+2. Clone the repository
+3. Add the original repository as a remote: `git remote add upstream UPSTREAM_URL`
+4. Create a new branch for the new feature or fix: `git checkout -b BRANCH_NAME`
+5. Make your changes, commit and push to your forked repository and branch
+6. Pull the latest changes from the original repository: `git pull upstream/main`
+7. Be suer to jump back to your branch: `git checkout BRANCH_NAME`
+8. Merge main into your branch: `git merge main`
+9. Resolve any conflicts
+10. Make the pull request to the original repository `git push origin BRANCH_NAME`
+11. Check the pull request on GitHub
+12. If the pull request is accepted, delete the branch
+
+For more info: [Using git in the real world](https://www.theodinproject.com/lessons/javascript-using-git-in-the-real-world)
