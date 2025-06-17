@@ -260,3 +260,41 @@ For more info: [Using git in the real world](https://www.theodinproject.com/less
   # If you pushed the branch to the remote repository, delete it there too
   git push origin --delete feat/my-new-feature
   ```
+
+## Create a new feature in a repository that you do not own
+
+- Fork the repository on GitHub
+- Clone the forked repository to your local machine:
+
+  ```bash
+  git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+  cd REPO_NAME
+  ```
+
+- Create a new branch for your feature:
+
+  ```bash
+  git checkout -b feat/my-new-feature
+  ```
+
+  - Work on your feature:
+
+  ```bash
+  git add .
+  git commit -m "feat: add my new feature"
+  ```
+
+- Push the branch to your forked repository:
+
+  ```bash
+  git push -u origin feat/my-new-feature
+  ```
+
+  - Go to the original repository on GitHub and create a pull request from your forked repository's branch
+  - Wait for the pull request to be reviewed and merged by the repository owner
+  - If the pull request is accepted, you can delete the branch from your forked repository:
+
+    ```bash
+    git branch -d feat/my-new-feature
+    git push origin --delete feat/my-new-feature
+    ```
