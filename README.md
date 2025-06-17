@@ -6,6 +6,41 @@ Git and GiHub cheat sheet
 
 - [dangitgit.com](https://dangitgit.com/en)
 
+## Table of Contents
+
+- [GitHub Cheat Sheet](#github-cheat-sheet)
+  - [Common git problems cheat sheet](#common-git-problems-cheat-sheet)
+  - [Table of Contents](#table-of-contents)
+  - [Create a new repository](#create-a-new-repository)
+  - [Create a new repository FROM THE COMMAND LINE](#create-a-new-repository-from-the-command-line)
+  - [Subsequent adds, commits, pushes](#subsequent-adds-commits-pushes)
+  - [Open repo on github browser](#open-repo-on-github-browser)
+  - [List all repositories](#list-all-repositories)
+  - [Tips](#tips)
+  - [Commit and push to GitHub](#commit-and-push-to-github)
+  - [Delete all local git files](#delete-all-local-git-files)
+  - [Clone a repository](#clone-a-repository)
+  - [Pull remote changes from GitHub to local](#pull-remote-changes-from-github-to-local)
+  - [Create a new branch](#create-a-new-branch)
+  - [Switch to a branch](#switch-to-a-branch)
+  - [See all branches](#see-all-branches)
+  - [Delete a branch](#delete-a-branch)
+  - [Merge a branch](#merge-a-branch)
+  - [See all commits](#see-all-commits)
+  - [See all commits in a branch](#see-all-commits-in-a-branch)
+  - [HARD Reset to a commit](#hard-reset-to-a-commit)
+  - [HARD Reset to a commit, delete all local changes](#hard-reset-to-a-commit-delete-all-local-changes)
+  - [Show](#show)
+  - [Revert](#revert)
+  - [Resolve merge conflicts](#resolve-merge-conflicts)
+  - [Display description and README.md of a repository](#display-description-and-readmemd-of-a-repository)
+  - [Get how many commits a day in a repo](#get-how-many-commits-a-day-in-a-repo)
+  - [Get how many commits a month in a repo](#get-how-many-commits-a-month-in-a-repo)
+  - [Get how many commits a year in a repo](#get-how-many-commits-a-year-in-a-repo)
+  - [Contribute to an Open Source project](#contribute-to-an-open-source-project)
+  - [Create a new feature in a repository that you own](#create-a-new-feature-in-a-repository-that-you-own)
+  - [Create a new feature in a repository that you do not own](#create-a-new-feature-in-a-repository-that-you-do-not-own)
+
 ## Create a new repository
 
 1. `mkdir` or `cd` into the root directory of your project
@@ -97,13 +132,17 @@ Git and GiHub cheat sheet
 
 - `git log BRANCH_NAME`
 
-## HARD Reset to a commit (WARNING: this will delete all commits after the commit you are resetting to)
+## HARD Reset to a commit
+
+> WARNING: this will delete all commits after the commit you are resetting to
 
 - `git reset --hard COMMIT_HASH`
 
-## HARD Reset to a commit, delete all local changes (WARNING: this will delete all commits after the commit you are resetting to) and force push to remote (WARNING: this will delete all commits after the commit you are resetting to on the remote)
+## HARD Reset to a commit, delete all local changes
 
-BEWARE: _Don’t use this method if the github repo is being used by multiple users_
+> WARNING: this will delete all commits after the commit you are resetting to and force push to remote. This will delete all commits after the commit you are resetting to on the remote
+>
+> _Don’t use this method if the github repo is being used by multiple users_
 
 - `git reset --hard COMMIT_HASH`
 - `git clean -f`
