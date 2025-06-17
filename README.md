@@ -218,3 +218,45 @@ After resolving conflicts, merge with:
 12. If the pull request is accepted, delete the branch
 
 For more info: [Using git in the real world](https://www.theodinproject.com/lessons/javascript-using-git-in-the-real-world)
+
+## Create a new feature in a repository that you own
+
+- Create a new branch: `git checkout -b feat/my-new-feature`
+
+- Work on your feature:
+
+  ```bash
+  git add .
+  git commit -m "feat: add my new feature"
+
+  # Optional: push the branch to the remote repository
+  git push -u origin feat/my-new-feature
+  ```
+
+- Switch back to the main branch and pull the latest changes:
+
+  ```bash
+  git checkout main
+  git pull
+  ```
+
+- Merge your feature branch into the main branch:
+
+  ```bash
+  git merge feat/my-new-feature
+  ```
+
+- Push the changes to the remote repository:
+
+  ```bash
+  git push origin main
+  ```
+
+- Delete the feature branch if you no longer need it:
+
+  ```bash
+  git branch -d feat/my-new-feature
+
+  # If you pushed the branch to the remote repository, delete it there too
+  git push origin --delete feat/my-new-feature
+  ```
