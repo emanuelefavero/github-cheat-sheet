@@ -166,6 +166,9 @@ File changes in directory:
 
 - `git blame`
 
+  - Example 1: `git blame README.md`
+  - Example 2: `git blame --line-porcelain README.md`
+
   Show commit:
 
 - `git show COMMIT_HASH`
